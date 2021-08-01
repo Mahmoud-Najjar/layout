@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="@android:integer/config_longAnimTime"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ic_store"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+       android:src="@drawable/ic_service" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:gravity="center_vertical"
+        android:text="primary color"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        android:text="button"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        android:text="secondary color"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/email_icon"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageView
+        android:id="@+id/ic_cost_of_service"
+        android:layout_width="49dp"
+        android:layout_height="38dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_store"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <RadioButton
+        android:id="@+id/option_twenty_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="16dp"
+        android:text="Amazing (20%)"
+        app:layout_constraintBottom_toTopOf="@+id/option_eighteen_percent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="how was the service ?"
+        app:layout_constraintBottom_toTopOf="@+id/option_twenty_percent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"></TextView>
+
+    <RadioButton
+        android:id="@+id/option_eighteen_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="16dp"
+        android:text="Good (18%)"
+        app:layout_constraintBottom_toTopOf="@+id/option_fifteen_percent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/option_fifteen_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="224dp"
+        android:text="OK (15%)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <path
+        android:id="@+id/path2"
+        android:layout_width="38dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:fillColor="#FFFFFF"
+        android:pathData="M38.19,65.92L69.32,65.92a1.2,1.2 0,0 0,1.2 -1.2,0.89 0.89,0 0,0 0,-0.23 17,17 0,0 0,-33.25 0,1.18 1.18,0 0,0 0.9,1.42ZM74.53,69.05a0.85,0.85 0,0 0,-0.78 -0.84L34,68.21a0.85,0.85 0,0 0,-0.77 0.84v2.82a0.84,0.84 0,0 0,0.77 0.86L73.78,72.73a0.85,0.85 0,0 0,0.77 -0.86L74.55,70.65C74.55,70.24 74.56,69.58 74.53,69.05ZM52.08,49h3.59a1.86,1.86 0,0 0,0 -3.72L52.08,45.28a1.86,1.86 0,0 0,0 3.72ZM53.87,39.81a1.19,1.19 0,0 0,1.19 -1.19L55.06,32.87a1.19,1.19 0,0 0,-2.38 0v5.71a1.19,1.19 0,0 0,1.19 1.19h0ZM61.69,41l4.62,-3.35a1.19,1.19 0,1 0,-1.4 -1.93L60.29,39A1.2,1.2 0,0 0,60 40.67a1.18,1.18 0,0 0,1.66 0.26ZM41.69,37.65L46.31,41a1.2,1.2 0,0 0,1.35 -2L43,35.66a1.19,1.19 0,0 0,-1.66 0.26,1.2 1.2,0 0,0 0.3,1.67Z"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="cost of service"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/ic_cost_of_service" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
